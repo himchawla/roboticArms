@@ -25,6 +25,8 @@ int main()
 	int W, H, R, M, T, L;
 	std::vector<point> mountPoints;
 
+	std::vector<task> tasks;
+
 	file >> W >> H >> R >> M >> T >> L;
 
 	for (int i = 0; i < M; i++)
@@ -43,12 +45,15 @@ int main()
 			point tempPoint;
 			file >> tempPoint.x >> tempPoint.y;
 			temp.assemblyPoints.push_back(tempPoint);
-
+			
 		}
+		tasks.push_back(temp);
 	}
 
-	std::cout << W;
 
+
+	
+	
 
 
 	return 0;
